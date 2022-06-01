@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time</title>
+    <style>
+        .container {
+            font-size: 23px;
+            background-color: blanchedalmond;
+            border: 2px solid gray;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+
+        #time {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        current time is <span id="time"></span>
+    </div>
+    <script>
+        // console.log("this is date and time tutorial")
+        // let now=new Date()
+        // console.log(now)
+
+        // let dt=new Date(0)               // 0 ek time interval hai millisecond me(0 millisecond) kiske baad k time inteval print hoke ayega, main reference k hisab se(main reference matlb thursday 1st january 1970, 5:30 k baad )
+        // console.log(dt)
+
+        // let newdate=new Date("2022-09-30")  // this is the format
+        // console.log(newdate)
+
+
+        // let newdate=new Date(year, month, date, hour, minute, seconds, milliseconds)  // this is the format
+
+        let newdatee = new Date(3020, 4, 6, 9, 3, 2, 34)
+        console.log(newdatee)
+
+        let yr = newdatee.getFullYear()
+        console.log("the year is", yr)
+
+        let datee = newdatee.getDate()
+        console.log("the date is", datee)
+
+        let month = newdatee.getMonth()
+        console.log("the month is", month)
+
+        let hours = newdatee.getHours()
+        console.log("the hour is", hours)
+
+        newdatee.setDate(15)
+        console.log(newdatee)
+
+        newdatee.setDate(39)   //apne aap (39-31=8) krlega .....31 ko hi minus krega
+        console.log(newdatee)
+
+        newdatee.setMinutes(29)
+        console.log(newdatee)
+
+
+        function updatetime() {
+            time.innerHTML = new Date()
+        }
+        setInterval(updatetime, 1000);
+
+
+
+
+
+
+
+        // console.log(Date.now())       //iska matlb h ki 1970-01-01 se kitne millisecond beet chuka hai(ye date wohi pehle wala default value hai)
+
+
+
+    </script>
+</body>
+
+</html>

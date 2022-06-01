@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settime out </title>
+</head>
+
+<body>
+    <div class="container">
+        time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is how you gonna be doing")
+        // setTimeout --> allows us to run the function once after the said interval of time
+        // clearTimeout --> allows us to run the function repeatedly after the interval of time
+        function greet() {
+            console.log("hello good morning")
+        }
+        setTimeout(greet, 3000,);       //here 3000 is for milliseconds jitna deri tk rukna hai function execution ko
+
+
+        
+        function greaat(name, byetext) {
+            console.log("hello good morning" + " " + name + " " + byetext)
+        }
+        // timeout=setTimeout(greaat, 5000, "Harry", "Take Care");   // function name should just be written and not called
+        // clearTimeout(timeout)
+
+        // greaat("harry", 'thank you')
+
+        // interval=setInterval(greaat, 1000, "harry", "thank you");
+        // clearInterval(interval)
+
+
+
+        function displaytime() {
+            time=new Date()
+            console.log(time)
+            document.getElementById('time').innerHTML=time
+        }
+        setInterval(displaytime, 1000);
+    </script>
+</body>
+
+</html>

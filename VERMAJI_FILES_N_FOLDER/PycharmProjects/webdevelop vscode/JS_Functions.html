@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions in JS</title>
+</head>
+
+<body>
+    <script>
+        // let name1="harry"
+        // let name2="rohit"
+        // // console.log(`${name1} is a good boy`)
+        // // or
+        // console.log(name2+ " is a good boy")
+
+        //this whole thing can also be printed using functional programming
+
+        function namesss(params, greeting = "greetings from javascript") {
+            console.log(greeting + " " + params)
+            console.log(params + " is a good boy")
+        }
+
+        function sum(a, b, c) {
+            let d = a + b + c
+            console.log(d)
+            return d
+        }
+
+        let greeter = "good morning"
+        let name = "Harry"
+        let name1 = "Shubham"
+        let name2 = "rohan"
+        let name3 = "sagar"
+
+        let a = 1
+        let b = 2
+        let c = 3
+        sum(a, b, c)
+
+
+        namesss(name, greeter)
+        namesss(name1, greeter)
+        namesss(name2, greeter)
+        namesss(name3)
+    </script>
+</body>
+
+</html>

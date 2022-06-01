@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgba(49, 117, 163, 0.909);
+      }
+      .container {
+        grid-template-rows: 4fr 2fr 4fr 4fr;
+        margin: 0 10%;
+        border-radius: 10px;
+        border: 2px solid red;
+      }
+      .firstcontainer {
+        background-color: blue;
+        list-style: none;
+        height: 20rem;
+        background: url(/food3.jpg);
+      }
+      .navbar {
+        display: flex;
+      }
+      .navbar li a {
+        display: flex;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0.5rem 2rem;
+        color: yellow;
+      }
+
+      .navbar li {
+        position: relative;
+        left: 50%;
+      }
+
+      #kanter {
+        position: relative;
+        left: 4%;
+        color: red;
+        top: 2rem;
+        border: 2px solid white;
+        font-weight: bolder;
+      }
+      .writing {
+        text-align: center;
+        color: wheat;
+        font-weight: bold;
+        font-size: 1.5rem;
+        position: relative;
+        top: 5rem;
+        text-align: center;
+      }
+      .writing button {
+        background: none;
+        border: 4px solid red;
+        position: relative;
+        top: 2rem;
+        font-size: 2rem;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+      }
+      .secondcontainer {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.552);
+        padding: 33px 0;
+      }
+
+      .secondcontainer1 img {
+        width: 10rem;
+        margin: 1rem 5rem;
+        height: 9em;
+      }
+
+      .txt {
+        height: 5rem;
+        width: 18rem;
+        text-align: left;
+      }
+      .thirdcontainer {
+        background-color: white;
+        height: 18rem;
+      }
+      .third1 {
+        margin: auto;
+        text-align: center;
+        color: blue;
+        font-weight: bold;
+      }
+      .third2 {
+        display: flex;
+        position: relative;
+        left: 10%;
+      }
+
+      #third21 {
+        margin: 1rem 2rem;
+        border-radius: 15px;
+        width: 15rem;
+        height: 8rem;
+      }
+
+      #third22 {
+        margin: 1rem 2rem;
+        border-radius: 15px;
+        width: 15rem;
+        height: 8rem;
+      }
+
+      #third23 {
+        margin: 1rem 2rem;
+        border-radius: 15px;
+        width: 15rem;
+        height: 8rem;
+    }
+    .head {
+        color: red;
+        font-weight: bold;
+    }
+    
+    .fourth{
+          margin: 1rem 2rem;
+          border-radius: 15px;
+          width: 15rem;
+          height: 8rem;
+          border: 3px solid whitesmoke;
+          height: 10rem;
+
+      }
+
+      .fourthcontainer {
+        background: url(/food2.jpg);
+        background-position: 80%;
+        opacity: .7;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="firstcontainer">
+        <div class="navbar">
+          <div id="kanter">KANTER</div>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/">ABOUT</a></li>
+          <li><a href="/">SERVICES</a></li>
+          <li><a href="/">CONTACT</a></li>
+        </div>
+        <div class="writing">
+          PIXEL PERFECT <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+          velit! <br />
+          <button type="submit">GET STARTED</button>
+        </div>
+      </div>
+      <div class="secondcontainer">
+        <div class="secondcontainer1">
+          <div class="img"><img src="/icon2.jpg" alt="" /></div>
+          <div class="txt">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+            enim nam repellat autem dolorum fugit earum neque nobis nesciunt
+            modi.
+          </div>
+        </div>
+
+        <div class="secondcontainer1">
+          <div class="img"><img src="/icon1.jpg" alt="" /></div>
+          <div class="txt">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+            enim nam repellat autem dolorum fugit earum neque nobis nesciunt
+            modi.
+          </div>
+        </div>
+
+        <div class="secondcontainer1">
+          <div class="img"><img src="/icon1.jpg" alt="" /></div>
+          <div class="txt">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+            enim nam repellat autem dolorum fugit earum neque nobis nesciunt
+            modi.
+          </div>
+        </div>
+
+        <div class="secondcontainer1">
+          <div class="img"><img src="/icon2.jpg" alt="" /></div>
+          <div class="txt">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+            enim nam repellat autem dolorum fugit earum neque nobis nesciunt
+            modi.
+          </div>
+        </div>
+      </div>
+      <div class="thirdcontainer">
+        <br />
+        <div class="third1">
+          <div>ABOUT US</div>
+          <div>Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+          <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            maiores, porro placeat dicta eveniet sint quo voluptatibus
+            laboriosam eius nihil.
+          </div>
+        </div>
+        <div class="third2">
+          <div id="third21">
+            <span class="img"></span>
+            <div class="head">WEB DEVELOPMENT</div>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              sapiente porro amet nemo voluptate! Provident, omnis repellat non
+              saepe voluptatum debitis recusandae? Delectus, praesentium labore?
+              Ab mollitia sed est esse!
+            </div>
+          </div>
+          <div id="third22">
+            <span class="img"></span>
+            <div class="head">WEB DEVELOPMENT</div>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              sapiente porro amet nemo voluptate! Provident, omnis repellat non
+              saepe voluptatum debitis recusandae? Delectus, praesentium labore?
+              Ab mollitia sed est esse!
+            </div>
+          </div>
+          <div id="third23">
+            <span class="img"></span>
+            <div class="head">WEB DEVELOPMENT</div>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              sapiente porro amet nemo voluptate! Provident, omnis repellat non
+              saepe voluptatum debitis recusandae? Delectus, praesentium labore?
+              Ab mollitia sed est esse!
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fourthcontainer">
+        <br />
+        <div class="third1">
+          <div>ABOUT US</div>
+          <div>Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+          <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            maiores, porro placeat dicta eveniet sint quo voluptatibus
+            laboriosam eius nihil.
+          </div>
+        </div>
+        <div class="third2">
+          <div class="fourth">
+            <span class="img"></span>
+            <div class="head">WEB DEVELOPMENT</div>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              sapiente porro amet nemo voluptate! Provident, omnis repellat non
+              saepe voluptatum debitis recusandae? Delectus, praesentium labore?
+              Ab mollitia sed est esse!
+            </div>
+          </div>
+          <div class="fourth">
+            <span class="img"></span>
+            <div class="head">WEB DEVELOPMENT</div>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              sapiente porro amet nemo voluptate! Provident, omnis repellat non
+              saepe voluptatum debitis recusandae? Delectus, praesentium labore?
+              Ab mollitia sed est esse!
+            </div>
+          </div>
+          <div class="fourth">
+            <span class="img"></span>
+            <div class="head">WEB DEVELOPMENT</div>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              sapiente porro amet nemo voluptate! Provident, omnis repellat non
+              saepe voluptatum debitis recusandae? Delectus, praesentium labore?
+              Ab mollitia sed est esse!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

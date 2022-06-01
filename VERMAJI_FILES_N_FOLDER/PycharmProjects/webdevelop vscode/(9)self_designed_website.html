@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(9)self_designed_website</title>
+    <style>
+        .container1 {
+            width: 60rem;
+            height: 50rem;
+            background-color: rgba(119, 0, 255, 0.456);
+            position: relative;
+            left: 8rem;
+        }
+
+        .container2 {
+            width: 43rem;
+            height: 40rem;
+            /* z-index: 2;
+            background: url(girl.jpg);
+            opacity: 1; */
+            background-color: rgba(0, 0, 0, 0.196);
+            color: black;
+            position: relative;
+            left: 8rem;
+            box-shadow: 10px 1px 60px red;
+            top: 5rem;
+        }
+
+        .fbox {
+            display: flex;
+        }
+
+        .menu {
+            margin: 2px 2px;
+            padding: 2px 20px;
+            position: relative;
+            top: 2rem;
+            transition: all;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+
+        .menu:hover {
+            color: blue;
+            text-decoration: solid;
+        }
+
+
+        h1 {
+            margin: 200px 10px;
+        }
+
+        p {
+            position: relative;
+            bottom: 10rem;
+            left: 1rem;
+            width: 25rem;
+            height: 10rem;
+        }
+
+        .inbtn {
+            position: relative;
+            bottom: 32rem;
+            left: 2rem;
+            background-color: blue;
+            width: 5rem;
+            height: 2rem;
+            transition: all;
+            color: white;
+        }
+
+
+        .inbtn:hover{
+            background-color: rgba(0, 255, 255, 0.035);
+        }
+
+        #cart {
+            margin: 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="container2">
+            <div class="fbox">
+                <!-- <div class="menu">Three dots</div>
+                <div class="menu">Specs</div>
+                <div class="menu">Products</div>
+                <div class="menu">Contact</div> -->
+                <a href="https://www.google.com" class="menu">GOOGLE</a>
+                <a href="https://www.facebook.com" class="menu">FACEBOOK</a>
+                <a href="https://www.instagram.com" class="menu">INSTAGRAM</a>
+                <a href="https://www.twitter.com" class="menu">TWITTER</a>
+            </div>
+            <h1>LAPTOP FOR THE FUTURE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magni optio molestias neque quidem
+                ducimusLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magni optio molestias
+                neque quidem ducimus.</p>
+            <img src="laptop.jpg" style="width: 14rem; height: 10rem; position: relative; bottom: 25rem; left: 29rem;">
+            <p style="position: relative; bottom: 24rem;"><strong>$900</strong></p>
+            <input type="button" value="13inch" class="inbtn">
+            <input type="button" value="Add To Cart" class="inbtn" id="cart">
+        </div>
+    </div>
+</body>
+
+</html>

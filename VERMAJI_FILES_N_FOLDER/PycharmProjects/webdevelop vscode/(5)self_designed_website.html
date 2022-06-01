@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th webpage</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 300px 3fr 3fr;
+            background-color: black;
+            color: white;
+            width: 650px;
+            height: 1000px;
+            margin: auto;
+        }
+
+        .box1 {
+            background-color: orange;
+        }
+
+        .boxx1 {
+            display: flex;
+        }
+
+        #register {
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            border: 2px solid red;
+            position: relative;
+            left: 35px;
+            top: 11px;
+
+        }
+
+        #signin {
+            background-color: orange;
+            color: white;
+            border-radius: 5px;
+            border: 2px solid orange;
+            position: relative;
+            left: 35px;
+            top: 11px;
+        }
+
+        #help {
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            border: 2px solid blue;
+            position: relative;
+            left: 35px;
+            top: 11px;
+        }
+
+        #text {
+            position: relative;
+            left: 236px;
+            top: 11px;
+            border-radius: 10px;
+            border: 2px solid orange;
+        }
+
+        #inetto {
+            color: white;
+            font-size: 3.5rem;
+            position: relative;
+            left: 55px;
+            font-family: Blackadder ITC;
+            top: 10px;
+        }
+
+        #writing {
+            color: black;
+            font-size: .7rem;
+            position: relative;
+            left: 50px;
+            bottom: 7px;
+        }
+
+        .boxx2 {
+            position: relative;
+            left: 18rem;
+            bottom: 2rem;
+            padding: 2px 2px;
+            margin: 1px -14px;
+
+        }
+
+        #home {
+            background-color: red;
+            border: 2px solid red;
+            border-radius: 6px;
+            color: white;
+            font-weight: bold;
+            padding: 2px 18px;
+            margin: -2px 2px;
+        }
+
+        #services {
+            background-color: orange;
+            border: 2px solid orange;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            padding: 2px 9px;
+            margin: -2px 2px;
+        }
+
+        .company {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        #follow {
+            position: relative;
+            bottom: 5.5rem;
+            left: 30rem;
+        }
+
+        #twi {
+            position: relative;
+            bottom: 6.6rem;
+            left: 36rem;
+        }
+
+        #ntwrk1 {
+            color: black;
+            font-weight: bold;
+            position: relative;
+            left: 8rem;
+            bottom: .6rem;
+        }
+
+        #ntwrk2 {
+            color: black;
+            font-weight: bold;
+            position: relative;
+            left: 10rem;
+            bottom: .5rem;
+        }
+
+        #ntwrk3 {
+            position: relative;
+            left: 12rem;
+            bottom: .3rem;
+            color: black;
+            font-weight: bold;
+        }
+
+        .boxx3 {
+            background-color: black;
+            width: 120px;
+            height: 110px;
+            border-radius: 10px;
+            position: relative;
+            bottom: 9rem;
+            left: 25rem;
+        }
+
+        .boxx3 ul {
+            font-size: 1rem;
+        }
+
+        #ntwrking {
+            background-color: red;
+            width: 90px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            bottom: 14rem;
+            left: 32.6rem;
+        }
+
+        #ts {
+            background-color: black;
+            position: relative;
+            bottom: 13.7rem;
+            left: 32.4rem;
+            width: 130px;
+            border-radius: 3px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .boxxx {
+            display: flex;
+            position: relative;
+            top: 4rem;
+            padding: 2px 2px;
+            font-weight: bold;
+            margin: 2px 2px;
+        }
+        .boxxx p{
+            text-decoration: none;
+        }
+
+        #firbox {
+
+            width: 50px;
+            position: relative;
+            bottom: 15rem;
+            left: 2rem;
+            padding: 4px 33px;
+            margin: 13px 1px;
+            border: 1px solid white;
+            border-radius: 24px;
+            text-align: -webkit-left;
+            height: 150px;
+            color: black;
+            background-color: white;
+        }
+
+        #secbox {
+            width: 76px;
+            position: relative;
+            bottom: 14.5rem;
+            left: 4rem;
+            padding: 2px 9px;
+            margin: 4px 26px;
+            border: 2px solid white;
+            border-radius: 20px;
+            text-align: center;
+            height: 155px;
+            color: black;
+            background-color: white;
+        }
+
+        #thibox {
+
+            width: 74px;
+            position: relative;
+            bottom: 14.4rem;
+            left: 7rem;
+            padding: 4px 10px;
+            margin: 4px -12px;
+            border: 2px solid white;
+            border-radius: 17px;
+            text-align: center;
+            height: 152px;
+            color: black;
+            background-color: white;
+        }
+
+        #foubox {
+
+            width: 79px;
+            position: relative;
+            bottom: 14rem;
+            left: 11rem;
+            padding: 6px 9px;
+            margin: 1px 1px;
+            border: 2px solid white;
+            border-radius: 19px;
+            text-align: center;
+            height: 147px;
+            color: black;
+            background-color: white;
+        }
+
+        .box2 {
+            background-color: gray;
+            height: 530px;
+
+        }
+
+        .box2box {
+            display: flex;
+            margin: 52px 2px;
+            position: relative;
+            bottom: .01rem;
+            background-color: gray;
+            color: black;
+            padding: 2px 2px;
+        }
+
+        #fbtn {
+            margin: 3px 56px;
+            padding: 2px 2px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+
+
+        #sbtn {
+            margin: 2px 32px;
+            padding: 2px 3px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+
+
+        #tbtn {
+            margin: 2px 48px;
+            padding: 2px 2px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+
+
+        #fobtn {
+            margin: 2px 27px;
+            padding: 2px 2px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+        .fline{
+            position: relative;
+            left: 2rem;
+            font-size: 1.6rem;
+            color:black;
+            
+        }
+        #svs{
+            color: black;
+            font-weight: bold;
+        }
+        .sline{
+            position: relative;
+            left: 25rem;
+            bottom: 21rem;
+        }
+        #it{
+            bottom: 21.3rem;
+            color: black;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+        .thbo{
+            width: 60px;
+            height: 60px;
+            background-color: black;
+            display: flex;
+            position: relative;
+            bottom: 21rem;
+            text-align: center;
+            left: 27rem;
+        }
+
+        .box3 {
+            background-color: black;
+            display: flex;
+        }
+        .ft p{
+            font-size: 1.4rem;
+            margin: 17px 18px;
+            padding: 2px 2px ;
+        }
+        #thboooo{
+            margin: 2px -8px;
+    padding: 5px 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="boxx1">
+                <input type="button" value="REGIsTER" id="register">
+                <input type="button" value="SIGN IN" id="signin">
+                <input type="button" value="HELP" id="help">
+                <input type="text" name="" id="text" style="width: 150px; height: 20px;">
+            </div>
+            <div id="inetto">Inetto</div>
+            <div id="writing">Internet Technology Consultants</div>
+            <div class="boxx2">
+                <input type="button" value="Home" id="home">
+                <a href="" class="company">Company</a>
+                <input type="button" value="Services" id="services">
+                <a href="" class="company">Projects</a>
+                <a href="" class="company">Contacts</a>
+            </div>
+            <div id="follow">Follow us on</div>
+            <img src="twitter.jpg" style="width: 30px;" id="twi">
+            <div id="ntwrk1">NETWORKING. DATABASE MANAGEMENT</div>
+            <div id="ntwrk2">APPLICATIONS, DEVELOPMENT</div>
+            <div id="ntwrk3">PROJECT MANAGEMENT</div>
+            <div class="boxx3">
+                <ul>
+                    <li>
+                        Services list
+                    </li>
+                    <li>
+                        Special Services
+                    </li>
+                    <li>
+                        New services
+                    </li>
+                    <li>
+                        Integration
+                    </li>
+                </ul>
+            </div>
+            <div id="ntwrking">Networking</div>
+            <div id="ts">Technical Support</div>
+            <div class="boxxx">
+                <span id="firbox">Web development <p>Lorem ipsum dolor sit amet.</p></span>
+                <span id="secbox">technical Support<p>Lorem ipsum dolor sit amet.</p></span>
+                <span id="thibox">network solutions<p>Lorem ipsum dolor sit amet.</p></span>
+                <span id="foubox">internet access<p>Lorem ipsum dolor sit amet.</p></span>
+            </div>
+
+        </div>
+        <div class="box2">
+            <div class="box2box">
+                <input type="button" class="btn" id="fbtn" value="Read more">
+                <input type="button" class="btn" id="sbtn" value="Read more">
+                <input type="button" class="btn" id="tbtn" value="Read more">
+                <input type="button" class="btn" id="fobtn" value="Read more">
+            </div>
+            <div class="fline" id="svs">Our Services</div>
+            <div class="fline" id="lists">
+                <ul>
+                    <li>
+                        Application Integration
+                    </li>
+                    <li>
+                        internet marketing
+                    </li>
+                    <li>
+                        it advisory services
+                    </li>
+                    <li>
+                        it staff augmentation
+                    </li>
+                    <li>
+                        application development
+                    </li>
+                    <li>
+                        printing services
+                    </li>
+                    <li>
+                        mailing services
+                    </li>
+                    <li>
+                        project methodology
+                    </li>
+                    <li>
+                        it security
+                    </li>
+                </ul>
+            </div>
+            <div class="sline" id="it">Need IT Solutions</div>
+            <div class="thbo">
+                <img src="gym3.jpg" style="width: 100px; height: 100px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, fuga!
+            </div><br><br><br><br><br><br>
+            <div class="thbo">
+                <img src="gym4.jpg" style="width: 100px; height: 100px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            </div>
+            
+        </div>
+        <div class="box3">
+            <div id="thbo" class="ft">
+                <p>Our Comapany</p>
+                <ul>
+                    <li>
+                        About us
+                    </li>
+                    <li>
+                        Work learn
+                    </li>
+                    <li>
+                        what we do
+                    </li>
+                    <li>
+                        clients
+                    </li>
+                    <li>
+                        management
+                    </li>
+                </ul>
+            </div>
+            <div id="thboo"  class="ft">
+                <p>Main Services</p>
+                <ul>
+                    <li>
+                        Market research
+                    </li>
+                    <li>
+                        Online Support
+                    </li>
+                    <li>
+                        Financial services
+                    </li>
+                    <li>
+                        Business help
+                    </li>
+                    <li>
+                        premises
+                    </li>
+                </ul>
+            </div>
+            <div id="thbooo" class="ft">
+                <p>Related Links</p>
+                <ul>
+                    <li>
+                        Stratergies
+                    </li>
+                    <li>
+                        Recent isues
+                    </li>
+                    <li>
+                        FAQ
+                    </li>
+                    <li>
+                        Solutions
+                    </li>
+                    <li>
+                        Contacts
+                    </li>
+                </ul>
+            </div>
+            <div id="thboooo" class="ft">
+                <p>Address</p>
+                987/0 bvhbgvbgbvbg <br>
+                bfvbbbgbg <br><br>
+                Freephone:6541
+                telephone:5641
+                FAx:544455
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

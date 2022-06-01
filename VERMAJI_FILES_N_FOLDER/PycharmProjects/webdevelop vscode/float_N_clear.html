@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOAT N CLEAR</title>
+    <style>
+        body {
+            font-family: Algerian;
+            background-color: #bf00ff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .refri {
+            height: 1021px;
+            width: 972px;
+            border: 20px ridge rgb(18, 11, 242);
+            margin: auto auto;
+
+        }
+
+        .container {
+            width: 900px;
+            border: 20px ridge purple;
+            margin: auto auto;
+
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 3px 12px;
+            padding: 3px 12px;
+            background-color: rgb(173, 204, 194);
+        }
+
+        #fruits {
+            float: left;
+            /* float aur width(% wala) sath sath me rhta hai*/
+            width: 47%;
+        }
+
+        #computer {
+            float: left;
+            width: 47%;
+
+
+        }
+
+        #stationary {
+            clear: both;
+            /*(clear:left)kaye matlb hota hai ki koi v element jo left me float krrha hai wo overlap na kre and likewise*/
+            float: left;
+            width: 97%;
+            margin: 20px 10px;
+        }
+
+        #glasses {
+            clear: both;
+            /* float: left; */
+            width: 97%;
+            margin: 10px 12px;
+            padding: 10px 10px;
+        }
+
+        p,
+        h1 {
+            text-align: start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="refri">
+        <div class="container">
+            <div id="fruits" class="item">
+                <h3>FRUITS</h3>
+                <p class="para" id="fruitspara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                    vel
+                    a perspiciatis at amet nemo! Autem quibusdam, reprehenderit aut placeat excepturi tempore natus quam
+                    aliquam, vel ullam consequatur beatae eius sapiente voluptas. Incidunt, rerum Lorem ipsum dolor sit
+                    amet
+                    consectetur adipisicing elit. Consequatur possimus tempora vero quasi. Veniam enim, minus debitis
+                    velit
+                    beatae laboriosam aut ipsa incidunt quae, minima quia ratione impedit nemo atque vel repellat fugiat
+                    eos!</p>
+            </div>
+
+            <div id="computer" class="item">
+                <h3>COMPUTER</h3>
+                <p class="computerpara" id="fruitspara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem vel a perspiciatis at amet nemo! Autem quibusdam, reprehenderit aut placeat excepturi
+                    tempore natus quam aliquam, vel ullam consequatur beatae eius sapiente voluptas. Incidunt Lorem
+                    ipsum
+                    dolor sit amet, consectetur adipisicing elit. Deleniti, dolore impedit consequatur assumenda in
+                    laboriosam amet iure similique. Illo commodi unde asperiores temporibus, architecto, sit dolorum
+                    reprehenderit nesciunt veniam nam atque ullam officia exercitationem!</p>
+            </div>
+
+            <div id="stationary" class="item">
+                <h3>STATIONARY</h3>
+                <p class="stationarypara" id="fruitspara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem vel a perspiciatis at amet nemo! Autem quibusdam, reprehenderit aut placeat excepturi
+                    tempore natus quam aliquam, vel ullam consequatur beatae eius sapiente voluptas. Incidunt Lorem
+                    ipsum
+                    dolor sit, amet consectetur adipisicing elit. Fugit quam quae, earum iste tempora amet quis
+                    excepturi.
+                    Vel numquam obcaecati accusamus delectus odit illum natus. Nostrum, fugiat ex corrupti et recusandae
+                    accusamus asperiores blanditiis?</p>
+            </div>
+
+            <div id="glasses" class="item">
+                <h3>GLASSES</h3>
+                <p class="glassespara" id="fruitspara">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem vel a perspiciatis at amet nemo! Autem quibusdam, reprehenderit aut placeat excepturi
+                    tempore natus quam aliquam, vel ullam consequatur beatae eius sapiente voluptas. Incidunt Lorem
+                    ipsum
+                    dolor sit, amet consectetur adipisicing elit. Fugit quam quae, earum iste tempora amet quis
+                    excepturi.
+                    Vel numquam obcaecati accusamus delectus odit illum natus. Nostrum, fugiat ex corrupti et recusandae
+                    accusamus asperiores blanditiis?</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

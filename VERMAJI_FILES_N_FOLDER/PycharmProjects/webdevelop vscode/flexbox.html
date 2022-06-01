@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=P
+    , initial-scale=1.0">
+    <title>FLEXBOX TUTORIAL</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* INITIALISE THE CONTAINER AS A FLEX BOX */
+            display: flex;            /* yeh krne se sb kch ek line me v aa jata hai */
+
+            /* FLEX PROPERTIES FOR FLEX CONTAINER */
+            /* flex-direction: column; */
+            /*by default flex-dirctn is row*/
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+
+            /* wrapping ka matlb hota hai folding agr usko inspect me jake chota bada kre 
+            to wo waise krke us hisab se adjust ho jayega . jaise ki agar koi mobile me dekhe to usko waise display me dikhega, koi tablet me dekhe to wo usko us hisab se dikhega, desktop pe dekhe to usko wo us hisab s dikhga */
+            flex-wrap: wrap;
+            /* default  value is no-wrap */
+            /* flex-wrap: wrap-reverse; */
+
+            /* shortcut for flex dirctn and wrapping */
+            /* flex-flow: column wrap; */
+
+            /* justify content will adjust the content in horizontal direction*/
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* adjust the content in vertical direction*/
+            /*align-items: center;                                               /* sab kuch ekdum center pe aa jayega */
+            /* align-items: flex-end; */
+            /* sb kuch ekdum niche k taraf chala jayega */
+            /*align-items: flex-start; */
+            /* sb kuch ekdum upar k taraf chala jayega */
+            /*align-items: stretch;    */
+            /* sb kuch matlb ki ek-ek chij pura vertically-sized ho jayega */
+        }
+
+        /* HIGHER THE ORDER LATER IT SHOWS UP IN THE CONTAINER */
+
+        #item-1 {
+            /* FLEX PROPERTIES FOR A FLEX ITEM */
+            /* order: 2; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 2; */
+        }
+
+        #item-2 {
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+            /* flex-basis: 320px; */
+            /* when flex=directn is set to row, flex-basis will contain width*/
+            /* when flex=directn is set to column, flex-basis will contain height*/
+
+        }
+
+        #item-3 {
+            /* order: 40 */
+            /* flex: 1 2 320px; */
+            /* shortcut to use flex, i.e, flex(grow, shrink, basis) */
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */                     /* khud ko hi pura center pe align kr lega */
+            /* align-self: center; */
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is a flexbox tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        <div class="item" id="item-4">fourth box</div>
+        <div class="item" id="item-5">fifth box</div>
+        <div class="item" id="item-6">sixth box</div>
+    </div>
+</body>
+
+</html>

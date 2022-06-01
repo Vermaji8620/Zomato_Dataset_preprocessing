@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6th design</title>
+    <style>
+        .container {
+            /* position: relative;
+            left: 24rem; */
+            display: grid;
+            grid-template-rows: 15rem 3fr 22rem 10fr;
+            width: 700px;
+            height: 550px;
+        }
+
+        .box1 {
+            background: url(gym2.jpg);
+            color: white;
+            background-position: 45%;
+        }
+
+        .box1 h5 {
+            position: relative;
+            left: 17rem;
+            top: 3rem;
+        }
+
+        .box1 h4 {
+            position: relative;
+            left: 12rem;
+            top: 6.5rem;
+        }
+
+        .box2 {
+            background-color: white;
+            font-weight: bold;
+            position: relative;
+            top: 1rem;
+            left: 7rem;
+        }
+
+        .box2 p {
+            position: relative;
+            left: 11rem;
+        }
+
+        .box2 .inbox {
+            position: relative;
+            right: .1rem;
+            margin: 8px 60px;
+            bottom: 2rem;
+            width: 500px;
+        }
+
+
+        .box3 {
+            position: relative;
+            z-index: -1;
+            opacity: 1;
+            background: url(food2.jpg);
+        }
+
+        .box3 p {
+            margin: 2px 6rem;
+        }
+
+        .mbox {
+            display: flex;
+            padding: 2px 60px;
+        }
+
+        .boxxxx {
+            padding: 2px 2px;
+            z-index: -5;
+            background: none;
+            opacity: .9;
+        }
+
+        .imag {
+            position: relative;
+            z-index: 10;
+            opacity: 100%;
+
+        }
+
+        #fboxx {
+            background-color: white;
+            margin: 2px 5px;
+            text-align: center;
+        }
+
+        #sboxx {
+            background-color: white;
+            margin: 2px 5px;
+            text-align: center;
+        }
+
+        #tboxx {
+            background-color: white;
+            margin: 2px 5px;
+            text-align: center;
+        }
+
+        #foboxx {
+            background-color: white;
+            margin: 2px 5px;
+            text-align: center;
+        }
+
+        .box4 {
+            background-color: pink;
+        }
+
+        .box4 #box4box1 {
+            color: black;
+            text-align: center;
+        }
+
+        .box4 #box4box2 {
+            color: black;
+            display: flex;
+        }
+
+        #box4box2 table {
+            padding: 2rem 14rem;
+            margin: 2rem 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <h4> HTML BASIC TEMPLATE </h4> <br>
+            <h5>create your style</h5>
+        </div>
+        <div class="box2">
+            <p> Special Gifts & Cards</p> <br>
+            <div class="inbox">
+                <img src="gym3.jpg" style="width: 10rem;" id="fi">
+                <img src="gym4.jpg" style="width: 10rem; height: 7.3rem;" id="si">
+            </div>
+        </div>
+        <div class="box3">
+            <p>BARBERS</p>
+            <div class="mbox">
+                <div id="fboxx" class="boxxxx">
+                    <img src="insta.jpg" style=" position: relative; width: 150px; height: 150px;" class="imag">
+                    <h5>Jane Doe</h3>
+                        <h5>FOUNDER</h4>
+                            <h5>+11212202310
+                            </h5>
+                            <h5>support@mog.com</h5>
+                </div>
+                <div id="sboxx" class="boxxxx">
+                    <img src="fb.jpg" style=" position: relative; width: 150px; height: 150px;" class="imag">
+                    <h5>Jane Doe</h3>
+                        <h5>FOUNDER</h4>
+                            <h5>+11212202310
+                            </h5>
+                            <h5>support@mog.com</h5>
+                </div>
+                <div id="tboxx" class="boxxxx">
+                    <img src="twitter.jpg" style=" position: relative; width: 150px; height: 150px;" class="imag">
+                    <h5>Jane Doe</h3>
+                        <h5>FOUNDER</h4>
+                            <h5">+11212202310
+                        </h5>
+                        <h5>support@mog.com</h5>
+                </div>
+                <div id="foboxx" class="boxxxx">
+                    <img src="windows.jpg" style=" position: relative; width: 150px; height: 150px;" class="imag">
+                    <h5>Jane Doe</h3>
+                        <h5>FOUNDER</h4>
+                            <h5>+11212202310
+                            </h5>
+                            <h5>support@mog.com</h5>
+                </div>
+            </div>
+        </div>
+        <div class="box4">
+            <div id="box4box1">Prices <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, veritatis?
+            </div>
+            <div id="box4box2">
+                <table>
+                    <thead>
+                        <tr >
+                            <th>SERVICE</th>
+                            <th>TIME</th>
+                            <th>PRICE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BEARD TRIM</td>
+                            <td>15 MIN</td>
+                            <td>515</td>
+                        </tr>
+                        <tr>
+                            <td>HOTWATER SHAVE</td>
+                            <td>15 MIN</td>
+                            <td>530</td>
+                        </tr>
+                        <tr>
+                            <td>HAIR STYLING</td>
+                            <td>15 MIN</td>
+                            <td>590</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

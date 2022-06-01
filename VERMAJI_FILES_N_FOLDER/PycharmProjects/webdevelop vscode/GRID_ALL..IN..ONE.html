@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid all in one</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: red;
+            /* width: 700px;
+            height: 855px; */
+            display: grid;
+            /* grid-template-columns: 133px 133px 133px;
+            grid-template-rows: 133px 133px 133px; */
+            /* grid-template-columns: repeat (3, 133px);
+            grid-template-rows: repeat (3, 133px); */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 1fr 100px;
+            row-gap: 12px;
+            column-gap: 12px;
+            justify-content: center;
+        }
+
+        .item {
+            background-color: aqua;
+            place-items: justify;
+            /* give this syntax if you want and if needed, else no need */
+            /* width: 122px;
+            height: 122px; */
+            /* agar item ko width aur height nahi de to..... by default sb item pura container k area occupy kr lega */
+        }
+
+        .header {
+            grid-column: 1/span 3;
+            background-color: black;
+            color: white;
+        }
+
+        .footer {
+            grid-column: 1/ span 4;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item header">this is a header</div>
+        <div class="item"></div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ducimus, sequi illum libero aut cumque aliquid autem ut quia fuga dolorum! Sunt exercitationem officiis dignissimos consectetur animi odio? Vitae ut natus dicta eaque sapiente? Sit pariatur magni excepturi minus similique asperiores nostrum ut eos unde enim consequuntur, impedit, totam voluptatem?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ducimus, sequi illum libero aut cumque aliquid autem ut quia fuga dolorum! Sunt exercitationem officiis dignissimos consectetur animi odio? Vitae ut natus dicta eaque sapiente? Sit pariatur magni excepturi minus similique asperiores nostrum ut eos unde enim consequuntur, impedit, totam voluptatem?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ducimus, sequi illum libero aut cumque aliquid autem ut quia fuga dolorum! Sunt exercitationem officiis dignissimos consectetur animi odio? Vitae ut natus dicta eaque sapiente? Sit pariatur magni excepturi minus similique asperiores nostrum ut eos unde enim consequuntur, impedit, totam voluptatem?</div>
+        <div class="item footer">this is my footer</div>
+    </div>
+</body>
+
+</html>

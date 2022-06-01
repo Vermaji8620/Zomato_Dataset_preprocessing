@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new webb design</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    .bigbox {
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        background-color: black;
+        width: 800px;
+        height: 550px;
+        margin: 3rem 16rem;
+    }
+
+    #firstbox {
+        background-color: rgb(230, 21, 21);
+        color: white;
+        font-size: 2.5rem;
+
+    }
+
+    #firstbox .firstboxheading {
+        position: relative;
+        top: 30px;
+        left: 90px;
+        color: rgb(168, 160, 160);
+
+    }
+
+    #firstbox .menus {
+        display: flex;
+        font-size: 1.3rem;
+        position: relative;
+        left: 27rem;
+        bottom: 3.2rem;
+    }
+
+    .firstmenu,
+    .secondmenu,
+    .thirdmenu,
+    .fourthmenu {
+        color: rgb(236, 25, 25) ;
+        padding: 4px 10px;
+        position: relative;
+        font-size: 15px;
+        right: 100px;
+        top: 20px;
+    }
+
+    #firstestmenu {
+        text-decoration: underline;
+        text-decoration-color: blue;
+    }
+
+    #secondbox {
+        background-color: rgb(48, 43, 43);
+        color: white;
+    }
+
+    #image {
+        background: url(nature.jpg);
+        background-size: 100%;
+        width: 500px;
+        height: 300px;
+        position: relative;
+        top: 30px;
+        left: 160px;
+    }
+
+    #thirdbox {
+        background-color: white;
+        display: flex;
+    }
+
+    .thirdboxboxes {
+        margin: 42px 11px;
+    }
+</style>
+
+<body>
+    <div class="bigbox">
+        <div id="firstbox">
+            <div class="firstboxheading">SOHO</div>
+            <div class="menus">
+                <button class="firstmenu" id="firstestmenu">HOME</button>
+                <button class="secondmenu">ABOUT</button>
+                <button class="thirdmenu">GALLERY</button>
+                <button class="secondmenu">CONTACT</button>
+            </div>
+        </div>
+        <div id="secondbox">
+            <div id="image"></div>
+        </div>
+        <div id="thirdbox">
+            <div class="thirdboxboxes">
+                Introducing Soho
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, similique. Dicta neque, veniam
+                dignissimos modi sunt dolore quasi? Amet
+            </div>
+            <div class="thirdboxboxes">
+                Features
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, similique. Dicta neque, veniam
+                dignissimos modi sunt dolore quasi? Amet v
+            </div>
+            <div class="thirdboxboxes">
+                Brower Love
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, similique. Dicta neque, veniam
+                dignissimos modi sunt dolore quasi? Amet v
+            </div>
+            <div class="thirdboxboxes">
+                Other files
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, similique. Dicta neque, veniam
+                dignissimos modi sunt dolore quasi? Amet v
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
